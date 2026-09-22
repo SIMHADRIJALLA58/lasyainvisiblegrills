@@ -323,7 +323,7 @@ Requirement: ${message || "Please share the details."}
 Thank you.`;
 
 
-            const whatsappNumber = "919900006948";
+            const whatsappNumber = "919663377474";
 
 
             const whatsappURL =
@@ -406,4 +406,37 @@ Thank you.`;
 
     }
 
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("Lasya-callback-form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const phone = document.getElementById("customerPhone").value.trim();
+
+    // Validate mobile number
+    if (!/^[0-9]{10}$/.test(phone)) {
+      alert("Please enter a valid 10-digit mobile number.");
+      return;
+    }
+
+    // Replace with your business WhatsApp number
+    const businessWhatsApp = "919XXXXXXXXX";
+
+    const message = `Hello Lasya Invisible Grills,
+
+I would like to request a callback.
+
+Customer Mobile Number: ${phone}`;
+
+    const whatsappURL =
+      `https://wa.me/${businessWhatsApp}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
+
+    form.reset();
+  });
 });

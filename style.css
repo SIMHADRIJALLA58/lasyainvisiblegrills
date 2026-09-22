@@ -8427,3 +8427,68 @@ body.Lasya-gallery-open {
     }
 
 }
+
+.logo {
+  width: 60px !important;
+  height: auto !important;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 60px !important;
+    height: auto !important;
+  }
+}
+
+
+/* Moving Announcement Bar */
+
+.moving-bar {
+    width: 100%;
+    overflow: hidden;
+    background: #ece8e8;
+    border-top: 1px solid #eeeeee;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+.moving-text {
+    display: flex;
+    width: max-content;
+    animation: movingText 25s linear infinite;
+}
+
+.moving-text span {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #050505;
+    padding-right: 30px;
+}
+
+@keyframes movingText {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .moving-bar {
+        padding: 8px 0;
+    }
+
+    .moving-text span {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .moving-text {
+        animation-duration: 45s;
+    }
+}
