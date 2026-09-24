@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "lasyainvisiblegrills.vercel.app"
+        }
+      ],
+      "destination": "https://lasyainvisiblegrills.in/$1",
+      "permanent": true
+    }
+  ]
+}
