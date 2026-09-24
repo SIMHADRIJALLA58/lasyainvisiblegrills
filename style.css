@@ -8492,3 +8492,808 @@ body.Lasya-gallery-open {
         animation-duration: 45s;
     }
 }
+
+
+
+/* =========================================================
+   AGASTHEESWARAM INVISIBLE GRILLS
+   PREMIUM MIDNIGHT NAVY + TURQUOISE DESIGN
+========================================================= */
+
+.agasteeswaram-grills-section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 115px 6%;
+    background: #f5f7f8;
+}
+
+/* Background Decorative Shape */
+
+.agasteeswaram-grills-section::before {
+    content: "";
+    position: absolute;
+    top: -180px;
+    right: -160px;
+    width: 480px;
+    height: 480px;
+    border: 1px solid rgba(22, 148, 153, 0.15);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.agasteeswaram-grills-section::after {
+    content: "";
+    position: absolute;
+    bottom: -220px;
+    left: -180px;
+    width: 480px;
+    height: 480px;
+    border: 1px solid rgba(20, 36, 58, 0.08);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.agasteeswaram-grills-container {
+    display: grid;
+    grid-template-columns: minmax(0, 0.94fr) minmax(0, 1.06fr);
+    align-items: center;
+    gap: 90px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   LEFT IMAGE AREA
+========================================================= */
+
+.agasteeswaram-image-column {
+    position: relative;
+    min-width: 0;
+}
+
+.agasteeswaram-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+    padding: 0 25px 70px 0;
+}
+
+/* Image Frame */
+
+.agasteeswaram-image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: calc(100% - 35px);
+    height: calc(100% - 70px);
+    border: 1px solid #19a5a4;
+    border-radius: 30px;
+    z-index: 0;
+}
+
+/* Main Image */
+
+.agasteeswaram-main-image {
+    position: relative;
+    display: block;
+    z-index: 2;
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+    object-position: center;
+    border: 10px solid #ffffff;
+    border-radius: 30px 30px 30px 4px;
+    box-shadow: 0 25px 55px rgba(17, 32, 49, 0.18);
+    transition:
+        transform 0.45s ease,
+        box-shadow 0.45s ease;
+}
+
+.agasteeswaram-image-wrapper:hover .agasteeswaram-main-image {
+    transform: translateY(-6px);
+    box-shadow: 0 32px 65px rgba(17, 32, 49, 0.23);
+}
+
+
+/* Decorative Image Label */
+
+.agasteeswaram-image-wrapper::after {
+    content: "MODERN HOME SOLUTIONS";
+    position: absolute;
+    left: -48px;
+    top: 90px;
+    z-index: 3;
+    padding: 11px 15px;
+    color: #ffffff;
+    background: #14243a;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    writing-mode: vertical-rl;
+    border-radius: 5px;
+}
+
+
+/* Decorative Circles */
+
+.agasteeswaram-image-circle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.circle-one {
+    top: -45px;
+    left: -50px;
+    width: 125px;
+    height: 125px;
+    border: 1px solid rgba(25, 165, 164, 0.40);
+    z-index: -1;
+}
+
+.circle-two {
+    right: -35px;
+    bottom: 15px;
+    width: 120px;
+    height: 120px;
+    background: rgba(25, 165, 164, 0.09);
+    border: 1px solid rgba(25, 165, 164, 0.18);
+    z-index: 1;
+}
+
+
+/* =========================================================
+   FLOATING IMAGE BADGE
+========================================================= */
+
+.agasteeswaram-image-badge {
+    position: absolute;
+    left: -28px;
+    bottom: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: max-content;
+    max-width: calc(100% - 10px);
+    padding: 19px 28px 19px 19px;
+    background: #14243a;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 13px;
+    box-shadow: 0 18px 40px rgba(20, 36, 58, 0.25);
+}
+
+.agasteeswaram-badge-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    color: #14243a;
+    background: #62d3cf;
+    border-radius: 10px;
+    font-size: 21px;
+}
+
+.agasteeswaram-badge-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.agasteeswaram-badge-content strong {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.agasteeswaram-badge-content span {
+    color: #b5c4cf;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   RIGHT CONTENT AREA
+========================================================= */
+
+.agasteeswaram-content-column {
+    min-width: 0;
+}
+
+
+/* Section Label */
+
+.agasteeswaram-section-label {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 23px;
+}
+
+.agasteeswaram-section-label span {
+    display: block;
+    width: 45px;
+    height: 3px;
+    background: #19a5a4;
+    border-radius: 20px;
+}
+
+.agasteeswaram-section-label p {
+    margin: 0;
+    color: #168f91;
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 2.2px;
+    line-height: 1.5;
+}
+
+
+/* Main Heading */
+
+.agasteeswaram-main-heading {
+    max-width: 720px;
+    margin: 0;
+    color: #14243a;
+    font-size: clamp(35px, 3.45vw, 60px);
+    font-weight: 850;
+    letter-spacing: -2px;
+    line-height: 1.09;
+}
+
+.agasteeswaram-main-heading strong {
+    display: block;
+    margin-top: 10px;
+    color: #168f91;
+    font-weight: 850;
+}
+
+.agasteeswaram-main-heading em {
+    display: block;
+    margin-top: 14px;
+    color: #64717d;
+    font-size: 0.46em;
+    font-style: normal;
+    font-weight: 750;
+    letter-spacing: -0.2px;
+    line-height: 1.5;
+}
+
+
+/* Heading Accent */
+
+.agasteeswaram-heading-line {
+    position: relative;
+    width: 90px;
+    height: 5px;
+    margin: 30px 0 27px;
+    background: #14243a;
+    border-radius: 20px;
+}
+
+.agasteeswaram-heading-line::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 0;
+    width: 18px;
+    height: 5px;
+    background: #e4b45c;
+    border-radius: 20px;
+}
+
+
+/* Description */
+
+.agasteeswaram-description {
+    max-width: 720px;
+}
+
+.agasteeswaram-description p {
+    margin: 0 0 19px;
+    color: #586570;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.95;
+}
+
+.agasteeswaram-description p strong {
+    color: #14243a;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   FEATURES GRID
+========================================================= */
+
+.agasteeswaram-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.agasteeswaram-feature-card {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    min-height: 114px;
+    padding: 20px 18px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e3e9ec;
+    border-radius: 12px;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.agasteeswaram-feature-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #19a5a4;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+}
+
+.agasteeswaram-feature-card:hover {
+    transform: translateY(-5px);
+    border-color: #b6dfe0;
+    box-shadow: 0 14px 30px rgba(20, 36, 58, 0.08);
+}
+
+.agasteeswaram-feature-card:hover::before {
+    transform: scaleY(1);
+}
+
+.agasteeswaram-feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    color: #168f91;
+    background: #e7f7f6;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.agasteeswaram-feature-card h3 {
+    margin: 2px 0 7px;
+    color: #14243a;
+    font-size: 15px;
+    font-weight: 850;
+    line-height: 1.35;
+}
+
+.agasteeswaram-feature-card p {
+    margin: 0;
+    color: #78838b;
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   INFORMATION STRIP
+========================================================= */
+
+.agasteeswaram-info-strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 19px 22px;
+    background: #14243a;
+    border-radius: 10px;
+    box-shadow: 0 12px 25px rgba(20, 36, 58, 0.10);
+}
+
+.agasteeswaram-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.agasteeswaram-info-item strong {
+    color: #62d3cf;
+    font-size: 15px;
+    font-weight: 850;
+}
+
+.agasteeswaram-info-item span {
+    color: #bdc9d1;
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.agasteeswaram-info-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+
+/* =========================================================
+   CTA BUTTONS
+========================================================= */
+
+.agasteeswaram-cta-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 32px;
+}
+
+.agasteeswaram-call-button,
+.agasteeswaram-whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    min-height: 55px;
+    padding: 0 28px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 850;
+    text-decoration: none;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.agasteeswaram-call-button {
+    color: #14243a;
+    background: #e4b45c;
+    box-shadow: 0 9px 22px rgba(173, 126, 45, 0.18);
+}
+
+.agasteeswaram-call-button:hover {
+    color: #14243a;
+    background: #f0c978;
+    transform: translateY(-3px);
+    box-shadow: 0 13px 28px rgba(173, 126, 45, 0.25);
+}
+
+.agasteeswaram-whatsapp-button {
+    color: #14243a;
+    background: #ffffff;
+    border: 1px solid #d8e0e5;
+}
+
+.agasteeswaram-whatsapp-button i {
+    color: #159c63;
+    font-size: 19px;
+}
+
+.agasteeswaram-whatsapp-button:hover {
+    color: #14243a;
+    border-color: #159c63;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(21, 156, 99, 0.10);
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .agasteeswaram-grills-section {
+        padding: 90px 5%;
+    }
+
+    .agasteeswaram-grills-container {
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        gap: 55px;
+    }
+
+    .agasteeswaram-image-wrapper {
+        padding-right: 15px;
+    }
+
+    .agasteeswaram-main-image {
+        height: 510px;
+    }
+
+    .agasteeswaram-image-badge {
+        left: -15px;
+        padding: 16px 19px;
+    }
+
+    .agasteeswaram-badge-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .agasteeswaram-badge-content strong {
+        font-size: 13px;
+    }
+
+    .agasteeswaram-badge-content span {
+        font-size: 11px;
+    }
+
+    .agasteeswaram-main-heading {
+        font-size: clamp(32px, 4vw, 46px);
+    }
+
+    .agasteeswaram-description p {
+        font-size: 15px;
+        line-height: 1.85;
+    }
+
+    .agasteeswaram-feature-card {
+        padding: 15px;
+    }
+
+    .agasteeswaram-info-strip {
+        gap: 12px;
+        padding: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .agasteeswaram-grills-section {
+        padding: 65px 20px 70px;
+    }
+
+    .agasteeswaram-grills-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .agasteeswaram-image-column,
+    .agasteeswaram-content-column {
+        width: 100%;
+    }
+
+    .agasteeswaram-image-wrapper {
+        max-width: 100%;
+        padding: 10px 10px 65px 0;
+    }
+
+    .agasteeswaram-image-wrapper::before {
+        top: 22px;
+        right: 0;
+        width: calc(100% - 18px);
+        height: calc(100% - 65px);
+        border-radius: 22px;
+    }
+
+    .agasteeswaram-image-wrapper::after {
+        left: -17px;
+        top: 65px;
+        padding: 9px 11px;
+        font-size: 7px;
+        letter-spacing: 1.3px;
+    }
+
+    .agasteeswaram-main-image {
+        height: 390px;
+        border-width: 7px;
+        border-radius: 22px 22px 22px 3px;
+    }
+
+    .circle-one {
+        top: -20px;
+        left: -18px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .circle-two {
+        right: -10px;
+        bottom: 20px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .agasteeswaram-image-badge {
+        left: 8px;
+        bottom: 0;
+        gap: 11px;
+        max-width: calc(100% - 15px);
+        padding: 15px 18px 15px 13px;
+        border-radius: 11px;
+    }
+
+    .agasteeswaram-badge-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .agasteeswaram-badge-content strong {
+        font-size: 12px;
+    }
+
+    .agasteeswaram-badge-content span {
+        font-size: 10px;
+    }
+
+    .agasteeswaram-section-label {
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+    .agasteeswaram-section-label span {
+        width: 30px;
+    }
+
+    .agasteeswaram-section-label p {
+        font-size: 9px;
+        letter-spacing: 1.1px;
+    }
+
+    .agasteeswaram-main-heading {
+        font-size: 34px;
+        letter-spacing: -0.9px;
+        line-height: 1.16;
+    }
+
+    .agasteeswaram-main-heading strong {
+        margin-top: 7px;
+    }
+
+    .agasteeswaram-main-heading em {
+        margin-top: 10px;
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+
+    .agasteeswaram-heading-line {
+        width: 70px;
+        height: 4px;
+        margin: 23px 0;
+    }
+
+    .agasteeswaram-heading-line::after {
+        height: 4px;
+    }
+
+    .agasteeswaram-description p {
+        font-size: 15px;
+        line-height: 1.85;
+        margin-bottom: 17px;
+    }
+
+    .agasteeswaram-features-grid {
+        grid-template-columns: 1fr;
+        gap: 11px;
+        margin-top: 25px;
+    }
+
+    .agasteeswaram-feature-card {
+        min-height: auto;
+        padding: 16px;
+    }
+
+    .agasteeswaram-feature-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .agasteeswaram-feature-card h3 {
+        font-size: 14px;
+    }
+
+    .agasteeswaram-feature-card p {
+        font-size: 12px;
+    }
+
+    .agasteeswaram-info-strip {
+        align-items: stretch;
+        gap: 10px;
+        margin-top: 24px;
+        padding: 16px 12px;
+    }
+
+    .agasteeswaram-info-item strong {
+        font-size: 11px;
+    }
+
+    .agasteeswaram-info-item span {
+        font-size: 9px;
+    }
+
+    .agasteeswaram-info-divider {
+        height: auto;
+        min-height: 35px;
+    }
+
+    .agasteeswaram-cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 11px;
+        margin-top: 26px;
+    }
+
+    .agasteeswaram-call-button,
+    .agasteeswaram-whatsapp-button {
+        width: 100%;
+        min-height: 53px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE DEVICES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .agasteeswaram-grills-section {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .agasteeswaram-main-heading {
+        font-size: 30px;
+    }
+
+    .agasteeswaram-main-heading em {
+        font-size: 15px;
+    }
+
+    .agasteeswaram-main-image {
+        height: 330px;
+    }
+
+    .agasteeswaram-info-strip {
+        gap: 7px;
+        padding: 14px 9px;
+    }
+
+    .agasteeswaram-info-item strong {
+        font-size: 10px;
+    }
+
+    .agasteeswaram-info-item span {
+        font-size: 8px;
+    }
+
+}
+
+
+
+
+
+
